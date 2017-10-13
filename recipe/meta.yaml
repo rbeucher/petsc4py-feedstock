@@ -13,6 +13,7 @@ source:
   md5: {{md5}}
   patches:
     - patch-3.8.0-4-gaf79264.diff
+    - patch-fallthrough.diff
 
 build:
   number: {{build}}
