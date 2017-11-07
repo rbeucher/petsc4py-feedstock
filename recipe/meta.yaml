@@ -1,6 +1,6 @@
 {% set build = 0 %}
-{% set version = '3.8.0' %}
-{% set md5 = '02029be4bdec904854f0e0692005fb06' %}
+{% set version = '3.8.1' %}
+{% set sha256 = 'd7b72c3337ddc56031d39d0b52d7f28b61ecc41b755ae853d23f34912b4f3c92' %}
 {% set mpi = os.environ.get('MPI') or 'mpich' %}
 
 package:
@@ -10,10 +10,7 @@ package:
 source:
   fn: petsc4py-{{version}}.tar.gz
   url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-{{version}}.tar.gz
-  md5: {{md5}}
-  patches:
-    - patch-3.8.0-4-gaf79264.diff
-    - patch-fallthrough.diff
+  sha256: {{sha256}}
 
 build:
   number: {{build}}
