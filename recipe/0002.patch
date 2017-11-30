@@ -1,0 +1,23 @@
+From eba35b4e5979b052e8e7a84aaea410f5c559eaa4 Mon Sep 17 00:00:00 2001
+From: Lisandro Dalcin <dalcinl@gmail.com>
+Date: Wed, 29 Nov 2017 11:48:22 +0300
+Subject: [PATCH 2/2] NumPy: Define NPY_NO_DEPRECATED_API to
+ NPY_1_7_API_VERSION
+
+---
+ src/PETSc.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/PETSc.c b/src/PETSc.c
+index 5a54aa1..c6124b5 100644
+--- a/src/PETSc.c
++++ b/src/PETSc.c
+@@ -1,4 +1,4 @@
+ #define MPICH_SKIP_MPICXX 1
+ #define OMPI_SKIP_MPICXX 1
+-#define NPY_NO_DEPRECATED_API NPY_API_VERSION
++#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+ #include "petsc4py.PETSc.c"
+-- 
+2.14.3
+
