@@ -1,6 +1,5 @@
-{% set build = 1 %}
-{% set version = '3.8.1' %}
-{% set sha256 = 'd7b72c3337ddc56031d39d0b52d7f28b61ecc41b755ae853d23f34912b4f3c92' %}
+{% set version = '3.9.0' %}
+{% set sha256 = 'cfe4ffa315706a371ca54e2027b4a8df8d696df253ab5ae7c0dbe5eccfa221e4' %}
 {% set mpi = os.environ.get('MPI') or 'mpich' %}
 
 package:
@@ -11,12 +10,9 @@ source:
   fn: petsc4py-{{version}}.tar.gz
   url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-{{version}}.tar.gz
   sha256: {{sha256}}
-  patches:
-    - 0001.patch
-    - 0002.patch
 
 build:
-  number: {{build}}
+  number: 0
   script: PETSC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
