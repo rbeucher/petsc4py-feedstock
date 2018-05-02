@@ -1,5 +1,5 @@
-{% set version = '3.9.0' %}
-{% set sha256 = 'cfe4ffa315706a371ca54e2027b4a8df8d696df253ab5ae7c0dbe5eccfa221e4' %}
+{% set version = '3.9.1' %}
+{% set sha256 = '0ccee912216f100d9b08637e036df00e043a530303ff8afd7c3ac7c454681fb9' %}
 {% set mpi = os.environ.get('MPI') or 'mpich' %}
 
 package:
