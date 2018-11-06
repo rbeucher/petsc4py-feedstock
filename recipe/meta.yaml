@@ -1,6 +1,5 @@
 {% set version = '3.10.0' %}
 {% set sha256 = '45d4bc6be668052a68dff311c0177171b9ceced69a398252c487f6ad9b790332' %}
-{% set mpi = os.environ.get('MPI') or 'mpich' %}
 
 package:
   name: petsc4py
@@ -12,7 +11,7 @@ source:
   sha256: {{sha256}}
 
 build:
-  number: 0
+  number: 1
   script: PETSC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
