@@ -31,11 +31,6 @@ requirements:
     - {{mpi}}
     - petsc # pinned by petsc run_exports
 
-test:
-  imports:
-    - petsc4py
-    - petsc4py.PETSc
-
 about:
   home: https://bitbucket.org/petsc/petsc4py
   summary: Python bindings for PETSc
