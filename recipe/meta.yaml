@@ -1,5 +1,5 @@
-{% set version = '3.10.0' %}
-{% set sha256 = '45d4bc6be668052a68dff311c0177171b9ceced69a398252c487f6ad9b790332' %}
+{% set version = '3.11.0' %}
+{% set sha256 = '58f4f57ac96ec39273906859cdc388b1ae372045c726bfd2a01d4eca8bc4a1e6' %}
 
 package:
   name: petsc4py
@@ -11,7 +11,7 @@ source:
   sha256: {{sha256}}
 
 build:
-  number: 1003
+  number: 0
   script: PETSC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
