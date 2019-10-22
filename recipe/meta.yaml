@@ -1,6 +1,8 @@
 {% set version = '3.11.0' %}
 {% set sha256 = '58f4f57ac96ec39273906859cdc388b1ae372045c726bfd2a01d4eca8bc4a1e6' %}
 
+{% set mpi = mpi or 'mpich' %}
+
 package:
   name: petsc4py
   version: {{version}}
@@ -23,12 +25,12 @@ requirements:
     - python
     - pip
     - numpy
-    - {{mpi}}
+    - {{ mpi }}
     - petsc {{version.rsplit('.', 1)[0]}}.*
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - {{mpi}}
+    - {{ mpi }}
     - petsc # pinned by petsc run_exports
 
 about:
