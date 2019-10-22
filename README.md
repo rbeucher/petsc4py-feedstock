@@ -71,87 +71,45 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpimpichpython2.7</td>
+              <td>osx_mpimpichpython2.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpimpichpython2.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpichpython2.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpimpichpython3.6</td>
+              <td>osx_mpimpichpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpimpichpython3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpichpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpimpichpython3.7</td>
+              <td>osx_mpimpichpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpimpichpython3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpichpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpiopenmpipython2.7</td>
+              <td>osx_mpiopenmpipython2.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpiopenmpipython2.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpipython2.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpiopenmpipython3.6</td>
+              <td>osx_mpiopenmpipython3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpiopenmpipython3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpipython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_fortran_compiler_version4mpiopenmpipython3.7</td>
+              <td>osx_mpiopenmpipython3.7</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version4mpiopenmpipython3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpimpichpython2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpimpichpython2.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpimpichpython3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpimpichpython3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpimpichpython3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpimpichpython3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpiopenmpipython2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpiopenmpipython2.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpiopenmpipython3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpiopenmpipython3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_fortran_compiler_version7mpiopenmpipython3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=772&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_fortran_compiler_version7mpiopenmpipython3.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/petsc4py-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpipython3.7" alt="variant">
                 </a>
               </td>
             </tr>
@@ -166,7 +124,12 @@ Current build status
       <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
     </td>
   </tr>
-![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -261,6 +224,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@dalcinl](https://github.com/dalcinl/)
+* [@davidbrochart](https://github.com/davidbrochart/)
 * [@minrk](https://github.com/minrk/)
 
