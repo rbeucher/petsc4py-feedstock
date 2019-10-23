@@ -16,6 +16,8 @@ mpi:
 - mpich
 numpy:
 - '1.14'
+petsc:
+- '3.11'
 pin_run_as_build:
   python:
     min_pin: x.x
