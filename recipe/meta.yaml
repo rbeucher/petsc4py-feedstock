@@ -1,5 +1,8 @@
-{% set version = '3.11.0' %}
-{% set sha256 = '58f4f57ac96ec39273906859cdc388b1ae372045c726bfd2a01d4eca8bc4a1e6' %}
+{% set version = '3.12.0' %}
+{% set sha256 = '1a02fa0336c27583aabf399124ac0610ef20452cf6b837a1082f7788f17fadad' %}
+# FIXME: bitbucket sets the wrong content-encoding headers, resulting in downloading the unzipped .tar file
+# rather than the tar.gz file
+{% set sha256 = 'fe3b189e77736bc0206ce28c5caa573dc97a829975f31fd6e8fa6f3e2512d719' %}
 
 {% set mpi = mpi or 'mpich' %}
 
@@ -8,7 +11,7 @@ package:
   version: {{version}}
 
 source:
-  fn: petsc4py-{{version}}.tar.gz
+  fn: petsc4py-{{version}}.tar
   url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-{{version}}.tar.gz
   sha256: {{sha256}}
 
