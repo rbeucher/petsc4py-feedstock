@@ -1,22 +1,20 @@
-{% set version = '3.12.0' %}
-{% set sha256 = '1a02fa0336c27583aabf399124ac0610ef20452cf6b837a1082f7788f17fadad' %}
-# FIXME: bitbucket sets the wrong content-encoding headers, resulting in downloading the unzipped .tar file
-# rather than the tar.gz file
-{% set sha256 = 'fe3b189e77736bc0206ce28c5caa573dc97a829975f31fd6e8fa6f3e2512d719' %}
+{% set name = 'petsc4py' %}
+{% set version = '3.13.0' %}
+{% set sha256 = 'ace21f71102e752fefac6c81b65207edba89a6974b3c58c71599c6c358640f39' %}
 
-{% set mpi = mpi or 'mpich' %}
+{% set version_xy = version.rsplit('.', 1)[0] + ".*" %}
 
 package:
   name: petsc4py
-  version: {{version}}
+  version: {{ version }}
 
 source:
   fn: petsc4py-{{version}}.tar
-  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-{{version}}.tar.gz
+  url: https://pypi.io/packages/source/{{name[0]}}/{{name}}/{{name}}-{{version}}.tar.gz
   sha256: {{sha256}}
 
 build:
-  number: 4
+  number: 0
   script: PETSC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
@@ -29,17 +27,19 @@ requirements:
     - pip
     - numpy
     - {{ mpi }}
-    - petsc {{version.rsplit('.', 1)[0]}}.*
+    - petsc {{ version_xy }}
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ mpi }}
     - petsc # pinned by petsc run_exports
+  run_constrained:
+    - mpi4py >=3.0.1
 
 about:
   home: https://bitbucket.org/petsc/petsc4py
   summary: Python bindings for PETSc
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE.rst
 
 extra:
