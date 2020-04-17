@@ -2,7 +2,7 @@
 {% set version = '3.13.0' %}
 {% set sha256 = 'ace21f71102e752fefac6c81b65207edba89a6974b3c58c71599c6c358640f39' %}
 
-{% set version_xy = version.rsplit('.', 1)[0] + ".*" %}
+{% set version_xy = version.rsplit('.', 1)[0] %}
 
 package:
   name: petsc4py
@@ -27,7 +27,7 @@ requirements:
     - pip
     - numpy
     - {{ mpi }}
-    - petsc {{ version_xy }}
+    - petsc {{ version_xy }}.*
   run:
     - python
     - {{ pin_compatible('numpy') }}
