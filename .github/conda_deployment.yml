@@ -1,0 +1,27 @@
+name: Conda Deployment 
+
+on:
+  push:
+    branches: 
+      - development
+    
+jobs:
+  ubuntu:
+    name: Ubuntu Conda Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Initialise Conda
+        run: |
+            conda init "$(basename ${SHELL})"
+      - name: Deploy Conda package
+        run: |
+            # we must use a new shell (new step) for Conda to take effect.
+            source /usr/share/miniconda/etc/profile.d/conda.sh
+            # create a new conda environment
+            conda create -n test --channel conda-forge conda-build anaconda-client conda-verify
+            conda activate test
+            conda config --set anaconda_upload yes
+            anaconda login --hostname github-actions-ubuntu-$RANDOM --username ${{ secrets.ANACONDA_USERNAME }} --password ${{ secrets.ANACONDA_PASSWORD }}
+            conda-build --channel conda-forge --user underworldcode recipe
+            anaconda logout
